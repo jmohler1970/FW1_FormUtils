@@ -18,7 +18,7 @@ Copyright 2007 Brian Kotek
 <cfcomponent name="FormUtilities" hint="Form Utilities">
 	
 	<cffunction name="init" access="public" hint="Constructor.">
-		<cfargument name="updateFormScope" type="boolean" required="false" default="false" hint="If true, adds the collections to the form scope." />
+		<cfargument name="updateFormScope" type="boolean" required="false" default="true" hint="If true, adds the collections to the form scope." />
 		<cfargument name="trimFields" type="boolean" required="false" default="true" />
 		<cfset variables.instance.updateFormScope = arguments.updateFormScope />
 		<cfset variables.instance.trimFields = arguments.trimFields />
