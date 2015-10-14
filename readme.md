@@ -1,3 +1,8 @@
+*Notice*
+
+This functionality to going to be developed into the Boostrap tags for ColdFusion project
+
+
 **FW/1 + Form Utils**
 
 FW/1 was developed by Sean Corfield to be a light weight MVC framework for ColdFusion.
