@@ -1,6 +1,24 @@
 **Notice**
 
-This functionality to going to be developed into the Boostrap tags for ColdFusion project
+**Obsolete**
+
+This functionality is obsolete. The Form Util CFC was created by Brian Kotek can now be used in newer versions for FW/1 without have to make special code changes.
+
+In application.cfc, two pieces of code are needed
+
+```
+function setApplication() {
+   ...
+	application.objFormUtilities = new framework.formUtilities();
+   ...
+   }
+   
+function after() {
+   ...
+   if ( isDefined('form') ) rc.Append(application.objFormUtilities.buildFormCollections(form));
+	...
+   }
+```
 
 
 **FW/1 + Form Utils**
@@ -12,6 +30,7 @@ Form Util CFC was created by Brian Kotek to make ColdFusion form processing more
 FW/1 takes all url.* and form.* variables an combines them into rc.*. Form Util CFC takes all url.* and form.* variables and converts them into structures and arrays.
 
 In order to get both of these to work together, FW/1 requires a small modification to how it builds the rc.* structure.
+
 
 
 
